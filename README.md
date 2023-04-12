@@ -1,40 +1,64 @@
-# ChatGIF
+<div align="center">
+<img src="./public/favicon.ico" alt="预览"/>
 
-search gifs with AI
+<h1 align="center">ChatGIF</h1>
 
-## Getting Started
+使用ChatGPT协助你寻找有趣的gif图。
 
-First, run the development server:
+[演示 Demo](https://chatgif.vercel.app/) / [反馈 Issues](https://github.com/hellovigoss/chatgif/issues) 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![主界面](./static/cover.png)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+</div>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 主要功能
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 任意内容搜索gif图
+- 支持 Vercel **免费一键部署**
+- 支持自定义域名，**无障碍**快速访问
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- search gif by any words
+- **Deploy for free with one-click** on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## demo
+![demo](./static/demo.gif)
+## 使用
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. 准备好你的 [OpenAI API Key](https://platform.openai.com/account/api-keys);
+2. 点击右侧按钮开始部署：
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
+3. 部署完毕后，即可开始使用；
+4. （可选）[绑定自定义域名](https://vercel.com/docs/concepts/projects/domains/add-a-domain)：Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名即可直连。
 
-## Deploy on Vercel
+## Get Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
+2. Click
+    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
+3. Enjoy :)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+你可以 star/watch 本项目或者 follow 作者来及时获得新功能更新通知。
+
+You can star or watch this project or follow author to get release notifictions in time.
+
+## 说明
+
+本项目的演示地址所用的 OpenAI 账户的免费额度将于 2023-07-01 过期，届时将无法通过演示地址在线体验。
+
+如果你想贡献出自己的 API Key，可以通过作者主页的邮箱发送给作者，并标注过期时间。
+
+## Attention
+
+The free trial of the OpenAI account used by the demo will expire on July 1, 2023, and the demo will not be available at that time.
+
+If you would like to contribute your API key, you can email it to the author and indicate the expiration date of the API key.
+
+## LICENSE
+
+- [Anti 996 License](https://github.com/kattgu7/Anti-996-License/blob/master/LICENSE_CN_EN)
