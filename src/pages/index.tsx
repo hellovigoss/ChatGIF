@@ -89,7 +89,7 @@ export default function Home() {
             }
 
             {md &&
-              <ReactMarkdown className={`bg-base-200 m-5 px-3 py-10 rounded-lg text-center flex flex-col justify-center ${mdStyles.markdown}`} children={md}></ReactMarkdown>
+              <ReactMarkdown className={`bg-base-200 m-5 px-3 py-10 rounded-lg text-center flex flex-col justify-center ${mdStyles.markdown}`}>{md}</ReactMarkdown>
             }
             {!loading &&
               <input onKeyDown={search} type="text" placeholder="input anything, press ENTER to search" className="input input-bordered w-full max-w-md" />
