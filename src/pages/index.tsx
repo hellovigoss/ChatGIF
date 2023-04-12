@@ -27,15 +27,25 @@ export default function Home() {
       setLoading(true);
       const data = {
         "model": "gpt-3.5-turbo",
-        "messages": [{
-          "role": "user", "content": `hey ChatGPT. hope you're having a great day. From now on you will respond to anything I say with the perfect gif response. 
+        "messages": [
+          {
+            "role": "user",
+            "content": `hey ChatGPT. hope you're having a great day.
+        From now on you will respond to anything I say with the perfect gif response.
         Once you know what gif you want to use, compile the most accurate and perfect search phrase that will result in the specific gif you want to send.
          
-        You will ONLY respond with the following markdown:
+        You will ONLY respond with the following markdown
+        and the gif markdown text should in a new paragraph
         ![result](http://scythe-spot-carpenter.glitch.me/search?search_term=<SEARCH+PHRASE>.gif)
-         
-        "${keyword}"`
-        }]
+
+        `
+          },
+          {"role": "assistant", "content": "Sure thing! I'll do my best to respond with the perfect gif for anything you say. Just let me know what you need!"},
+          {
+            "role": "user",
+            "content": ele.value
+          }
+        ]
       }
       const response = await fetch('/api/gif', {
         method: 'POST',
