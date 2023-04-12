@@ -5,6 +5,12 @@
 
 使用ChatGPT协助你寻找有趣的gif图。
 
+以往搜索gif图的形式都是明确的关键词，然鹅，有了chatgpt加持之后，你可以输入任何类型的语句来进行关键词搜索，比如：
+- 奶奶的好难过
+- 比天还高比海还遥远
+- 拜拜了您内
+- 更多的请大家探索
+
 [演示 Demo](https://chatgif.vercel.app/) / [反馈 Issues](https://github.com/hellovigoss/chatgif/issues) 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
