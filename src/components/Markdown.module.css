@@ -1,0 +1,14 @@
+@import url("/Noto_Sans_Miao/NotoSansMiao-Regular.ttf?family=Noto_Sans_Miao");
+.markdown p{
+    font-family: 'Noto_Sans_Miao';
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.markdown img{
+    height: 300px;
+    border: none;
+    box-shadow: 0px 0px 0px 3px #888, 0px 0px 0px 6px #555;
+}
