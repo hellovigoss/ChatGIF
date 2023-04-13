@@ -50,10 +50,6 @@
 3. Enjoy :)
 
 
-你可以 star/watch 本项目或者 follow 作者来及时获得新功能更新通知。
-
-You can star or watch this project or follow author to get release notifictions in time.
-
 ## 说明
 
 本项目的演示地址所用的 OpenAI 账户的免费额度将于 2023-07-01 过期，届时将无法通过演示地址在线体验。
@@ -69,3 +65,12 @@ If you would like to contribute your API key, you can email it to the author and
 ## LICENSE
 
 - [Anti 996 License](https://github.com/kattgu7/Anti-996-License/blob/master/LICENSE_CN_EN)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hellovigoss/ChatGIF&type=Date)](https://star-history.com/#hellovigoss/ChatGIF&Date)
+
+
+你可以 star/watch 本项目或者 follow 作者来及时获得新功能更新通知。
+
+You can star or watch this project or follow author to get release notifictions in time.
