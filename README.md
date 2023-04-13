@@ -41,13 +41,15 @@
     [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
 3. 部署完毕后，即可开始使用；
 4. （可选）[绑定自定义域名](https://vercel.com/docs/concepts/projects/domains/add-a-domain)：Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名即可直连。
+5. （可选）如果使用自建的openai proxy，请设置环境变量```OPENAI_PROXY```。
 
 ## Get Started
 
 1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
 2. Click
     [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hellovigoss/chatgif&env=OPENAI_API_KEY&project-name=chatgif&repository-name=chatgif)
-3. Enjoy :)
+3. (Optional) If you use your own openai proxy, set environment variable ```OPENAI_PROXY```
+4. Enjoy :)
 
 
 ## 说明
