@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-between items-center h-screen w-screen">
       {error &&
-      <div className="alert alert-error shadow-lg w-2/3 fixed">
+      <div className="alert alert-error shadow-lg md:w-2/3 w-full fixed">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           <span>Ops~ Something went wrong, please try again later!</span>
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
       }
       <GithubConor></GithubConor>
-      <div className="hero h-screen w-2/3 bg-base-300">
+      <div className="hero h-screen md:w-2/3 w-full bg-base-300">
         <div className="hero-content text-center w-full flex flex-col content-center">
           {welcome &&
           <div>
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer w-2/3 h-auto p-8 bg-neutral text-neutral-content">
+      <footer className="footer md:w-2/3 w-full h-auto p-8 bg-neutral text-neutral-content">
         <div className=" w-full">
           <p className="text-right w-full">
             Made by vgs.dy on <a href="https://github.com/hellovigoss" target="_blank">GitHub&nbsp;&nbsp;
