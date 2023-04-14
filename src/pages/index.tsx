@@ -1,8 +1,10 @@
 import React from "react"
+import { useEffect } from 'react'
 import { useState } from "react";
 import ReactMarkdown from 'react-markdown';
 import GithubConor from "../components/githubConor";
 import GithubIco from "../components/githubIco";
+import SwitchTheme from "../components/SwitchTheme";
 
 import mdStyles from '../components/Markdown.module.css';
 
@@ -79,6 +81,7 @@ export default function Home() {
       <GithubConor></GithubConor>
       <div className="hero h-screen md:w-2/3 w-full bg-base-300">
         <div className="hero-content text-center w-full flex flex-col content-center">
+          <SwitchTheme></SwitchTheme>
           {welcome &&
           <div>
           <h1 className="text-5xl font-bold mb-3"><span className="text-red-400">ChatGIF</span> with AI</h1>
