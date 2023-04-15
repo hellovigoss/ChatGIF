@@ -7,7 +7,6 @@ async function createStream(req: NextApiRequest) {
   const apiProxy = process.env.OPENAI_PROXY && (process.env.OPENAI_PROXY as String).length > 0 ?
     process.env.OPENAI_PROXY :
     "https://api.openai.com";
-    console.log(apiProxy);
 
   const res = await fetch(`${apiProxy}/v1/chat/completions`, {
     headers: {
