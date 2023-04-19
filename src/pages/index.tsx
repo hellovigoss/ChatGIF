@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useState } from "react";
 import ReactMarkdown from 'react-markdown';
 import GithubConor from "../components/githubConor";
 import GithubIco from "../components/githubIco";
-import SwitchTheme from "../components/SwitchTheme";
+import Tools from "../components/Tools";
 
 import mdStyles from '../components/Markdown.module.css';
 
@@ -14,6 +14,15 @@ export default function Home() {
   const [md, setMd] = useState("");
   const [welcome, setWelcome] = useState(true);
   const [error, setErr] = useState(false);
+  const [sk, setSk] = useState("");
+
+  useEffect(() => {
+    // load key from localStroage
+    if (localStorage.getItem("apikey")) {
+      setSk(localStorage.getItem("apikey") || '');
+    }
+  },[]);
+
   const search = async (event: React.KeyboardEvent) => {
     let ele = event.target as HTMLInputElement;
     if(ele.value.length == 0) {
@@ -34,7 +43,7 @@ export default function Home() {
             "content": `hey ChatGPT. hope you're having a great day.
         From now on you will respond to anything I say with the perfect gif response.
         Once you know what gif you want to use, compile the most accurate and perfect search phrase that will result in the specific gif you want to send.
-         
+
         respond with markdown:
         "
         Sure, I'm happy to help you!\n
@@ -50,7 +59,7 @@ export default function Home() {
           }
         ]
       }
-      const response = await fetch('/api/gif', {
+      const response = await fetch('/api/gif?sk=' + sk, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -66,6 +75,10 @@ export default function Home() {
       }
       setLoading(false);
     }
+
+  }
+  const setKey = (apiKey: string) => {
+    setSk(apiKey);
   }
   return (
     <main className="flex flex-col justify-between items-center h-screen w-screen">
@@ -80,7 +93,7 @@ export default function Home() {
       <GithubConor></GithubConor>
       <div className="hero h-screen md:w-2/3 w-full bg-base-300">
         <div className="hero-content text-center w-full flex flex-col content-center">
-          <SwitchTheme></SwitchTheme>
+          <Tools onVarFromChild={setKey}></Tools>
           {welcome &&
           <div>
           <h1 className="text-5xl font-bold mb-3"><span className="text-red-400">ChatGIF</span> with AI</h1>

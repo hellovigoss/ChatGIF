@@ -2,11 +2,14 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 async function createStream(req: NextApiRequest) {
+  const { sk } = req.query;
 
-  let apiKey = process.env.OPENAI_API_KEY;
+  let apiKey = (sk as String).length > 0 ? sk : process.env.OPENAI_API_KEY;
+
   const apiProxy = process.env.OPENAI_PROXY && (process.env.OPENAI_PROXY as String).length > 0 ?
     process.env.OPENAI_PROXY :
     "https://api.openai.com";
+  console.log(`call api: ${apiProxy} use api key: ${apiKey}`);
 
   const res = await fetch(`${apiProxy}/v1/chat/completions`, {
     headers: {
