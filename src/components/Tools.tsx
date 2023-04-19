@@ -1,3 +1,4 @@
+ /* eslint react/no-unescaped-entities */
 import React, { useEffect, useRef, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { TbKeyOff, TbKey } from "react-icons/tb";
