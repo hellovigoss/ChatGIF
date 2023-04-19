@@ -26,11 +26,14 @@
 - 任意内容搜索gif图
 - 支持 Vercel **免费一键部署**
 - 支持自定义域名，**无障碍**快速访问
+- 支持使用自定义apikey，环境变量（公用）、网页填写（私有）两种模式
 
 ## Features
 
 - search gif by any words
 - **Deploy for free with one-click** on Vercel
+- support customrize domain to openai
+- support customrize apike, with env mode (for public) and localStorage mode (for self)
 
 ## demo
 ![demo](./static/demo.gif)
